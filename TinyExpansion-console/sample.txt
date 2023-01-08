@@ -1,0 +1,10 @@
+read x;
+if (0 < x)
+  fact -= 1;
+  repeat
+    fact = fact * x;
+    x = x - 1 - 1;
+    x = x % 1;
+    x := a&b|c
+  until x <= 10and x > 0 and x <> 2;
+write fact

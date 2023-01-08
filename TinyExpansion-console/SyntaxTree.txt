@@ -1,0 +1,41 @@
+
+Syntax tree:
+  Read: x
+  If
+    Op: <
+      Const: 0
+      Id: x
+    Repeat
+      Assign to: fact
+        Op: *
+          Id: fact
+          Id: x
+      Assign to: x
+        Op: -
+          Op: -
+            Id: x
+            Const: 1
+          Const: 1
+      Assign to: x
+        Op: Unknown token: 26
+          Id: x
+          Const: 1
+      Regular Assign to: x
+        Op: |
+          Op: &
+            Id: a
+            Id: b
+          Id: c
+      Op: and
+        Op: and
+          Op: <=
+            Id: x
+            Const: 10
+          Op: >
+            Id: x
+            Const: 0
+        Op: <>
+          Id: x
+          Const: 2
+    Write
+      Id: fact
